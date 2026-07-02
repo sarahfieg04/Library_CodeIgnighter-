@@ -83,7 +83,8 @@ On books list, click Delete
 
 
 # Additional Notes 
-     
+- The cover image is optional. If not provided, a placeholder is shown
+- Custom routes were defined in app/Config/Routes.php
 
 
           
