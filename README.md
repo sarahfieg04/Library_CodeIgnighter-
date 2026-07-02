@@ -10,6 +10,12 @@ A library webpage to add, read, update, and delete book records
 1. Download and Install Codeigniter 4 
    1. Download from: https://codeigniter.com/download or from composer: composer create-project codeigniter4/appstarter library_codeigniter
    2. This will create a new fold with your CodeIgniter setup
+   3. Copy the provided files
+         - app/Database/Migrations/CreateBookRecords.php
+         - app/Controllers/BookController.php
+         - app/Models/BookModel.php
+         - app/Views/books/Form.php
+         - app/Views/books/List.php
       
 2. Open terminal or command prompt in your project folder and run: composer install
    
