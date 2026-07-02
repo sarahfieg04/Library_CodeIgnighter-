@@ -7,11 +7,17 @@ A library webpage to add, read, update, and delete book records
 - XAMPP or any MySQL sever
 - 
 # How to Run: 
-1. Clone or download the repository
+1. Download and Install Codeigniter 4 
+   1. Download from: https://codeigniter.com/download or from composer: composer create-project codeigniter4/appstarter library_codeigniter
+   2. This will create a new fold with your CodeIgniter setup
+      
 2. Open terminal or command prompt in your project folder and run: composer install
-3. Select your XAMPP or MySQL sever location 
-4. Open XAMPP Control Panel and select start for MySQL and Apache
-5. Create the books table
+   
+4. Select your XAMPP or MySQL sever location
+   
+6. Open XAMPP Control Panel and select start for MySQL and Apache
+   
+7. Create the books table
    1. Open  http://localhost/phpmyadmin in your broswer
    2. Click new in the sidebar
    3. Enter ci4 as the databse name
@@ -25,27 +31,33 @@ A library webpage to add, read, update, and delete book records
            publication_year INT,
            cover_image VARCHAR(255)
         );
-   6. Configure the .env file
+      
+  8. Configure the .env file
       1. Open the file label env and rename it to .env
       2. uncomment these lines and set them as follows:
-          - database.default.hostname = localhost
+         - database.default.hostname = localhost
          - database.default.database = ci4
          - database.default.username = root
          - database.default.password =
          - database.default.DBDriver = MySQLi
-  7. Start CodeIgniter Sever
+           
+  9. Start CodeIgniter Sever
      1. In your project folder run: php spark serve
      2. You should ee something like:   CodeIgniter development server started on http://localhost:8080
-  8. Page Navigations
+        
+  10. Page Navigations
      1. Go to http://localhost:8080/book, you will see your list of books or a message if the library is empty
-     2. To add a book
-         1. Click 'Add Book' button
-         2. Fill out the form and hit Save, your book will appear on the home page
-     3. To Edit a Book
-         1. Click the 'Edit' button next to any book
-         2. Make your changes and then hit the 'Update' button to save your changes
-    4. To Delete a Book
-         1. On the home page hit the 'Delete' button next to a book in the Actions column and click confirm.
+      
+   11. How to use
+       1. To add a book
+         - Click 'Add Book' button
+         - Fill out the form and hit Save, your book will appear on the home page
+     2. To Edit a Book
+         - Click the 'Edit' button next to any book
+         - Make your changes and then hit the 'Update' button to save your changes
+    3. To Delete a Book
+         -  On the home page hit the 'Delete' button next to a book in the Actions column and click confirm.
+
        
 # Page Navigations Example 
 - Books List
